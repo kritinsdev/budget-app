@@ -18,5 +18,8 @@
             "src/App/Config/Middleware.php"
         ]
     },
+    "scripts": {
+        "budget": "php cli.php"
+    },
     "require": {}
 }
