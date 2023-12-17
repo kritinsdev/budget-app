@@ -2,12 +2,8 @@
 
 namespace Framework\Exceptions;
 
-use RuntimeException;
+use Exception;
 
-class ValidationException extends RuntimeException
+class ContainerException extends Exception
 {
-    public function __construct(int $code = 422)
-    {
-        parent::__construct(code: $code);
-    }
 }
