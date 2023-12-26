@@ -10,4 +10,6 @@ $db = new Database('mysql', [
     'dbname' => 'budget'
 ], 'root', '');
 
-echo "Connected to database!";
+$sqlFile = file_get_contents("./database.sql");
+
+$db->query($sqlFile);
