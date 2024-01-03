@@ -18,7 +18,8 @@ class ValidationExceptionMiddleware implements MiddlewareInterface
 
             $excludedFields = ['password', 'confirmPassword'];
             $formattedDataForm = array_diff_key(
-                $oldFormData, array_flip($excludedFields)
+                $oldFormData,
+                array_flip($excludedFields)
             );
 
             $_SESSION['errors'] = $e->errors;
